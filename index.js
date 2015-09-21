@@ -5,4 +5,4 @@ app.get('/', function(req,res){
 	res.send('Hello world');
 });
 app.listen(port);
-console.log("started at 3000");
+console.log("started at " + port);
