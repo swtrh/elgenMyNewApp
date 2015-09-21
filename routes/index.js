@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 // This responds a GET request for abcd, abxcd, ab123cd, and so on
 router.get('/store', function(req, res) {   
-   res.render('store', { title: 'Welcome to the store' }); 
+   res.render('store', { title: 'Welcome to the store',messageURL:process.env.MESSAGE_URL }); 
  
 })
 
